@@ -43,11 +43,52 @@
     <section>
       <h2>Projects</h2>
       <ul id="projects">
-        <li><h3>Track.It</h3></li>
-        <li><h3>YarnGPT</h3></li>
-        <li><h3>Weather App</h3></li>
-        <li><h3>Olive Chatbot</h3></li>
+        <li class="proj">
+          <h3>Track.It</h3><img src="assets/trackit.jpg" alt="" class="project-img">
+          <div><a href="https://trackit-gamma-six.vercel.app/" target="_blank">Live Demo</a>
+            <details>
+              <summary>Details</summary>An Expense tracker made with React.js, Recharts, Tailwindcss and Poweredby
+              Supabase
+            </details>
+          </div>
+        </li>
+        <li class="proj">
+          <h3>Text to Speech Converter</h3><img src="assets/tts.jpg" alt="" class="project-img">
+          <div><a href="#" target="_self" disabled>Live Demo</a>
+            <details>
+              <summary>Details</summary>A Text to Speech Converter Made using YarnGPT's text to speech API
+            </details>
+        </li>
+        <li class="proj">
+          <h3>Weather App</h3><img src="assets/weather.jpg" alt="" class="project-img">
+          <div><a href="https://dd-weather-app.vercel.app" target="target" disabled>Live Demo</a>
+            <details>
+              <summary>Details</summary>My submission for the weather app challange by front end mentor
+            </details>
+        </li>
+        <li class="proj">
+          <h3>Olive - AI Chatbot</h3><img src="assets/olive.jpg" alt="" class="project-img">
+          <div><a href="https://olive-chatbot.netlify.app/" target="target" disabled>Live Demo</a>
+            <details>
+              <summary>Details</summary>An Interface for the Gemini Flash 3.0 AI model made using Google Gemini API
+            </details>
+        </li>
       </ul>
+    </section>
+    <section>
+      <h2>Contact Me</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="3977e5f1-6443-4950-a1ea-4cd450d51ad5">
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" name="name" required placeholder="John Doe">
+          <label for="email">E-Mail</label>
+          <input type="email" name="email" placeholder="john@doe.com" required>
+        </div>
+        <label for="name">Message</label>
+        <textarea name="message" placeholder="Enter your message here..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </main>
 </body>

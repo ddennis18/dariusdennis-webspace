@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Darius Dennis</title>
 </head>
@@ -15,20 +21,31 @@
     <p>Front End Dev / Aspiring Full Stack Dev / Electrical and Electronics Engineering Student</p>
     <img src="assets/profile.jpg" alt="profile image" id="profile-image" />
   </header>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#skillset-section">Skillset</a></li>
+      <li><a href="#project-section">Projects</a></li>
+      <li><a href="#socials-section">Socials</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+  </nav>
   <main>
-    <section>
+    <section id="about-section">
       <h2>About Me</h2>
       <p>
         Darius Dennis is a front end developer currently pushing his domain into Fullstack Development. He has built a
         variety of Projects that showcases his skill and understanding Web Development. Working with modern web
         development technologies he builds clean and responsive user
-        interface that look goob on all platforms <br>
+        interface that look good on all platforms
+      </p>
+      <p>
         He is currently studying
-        Electrical and Electronics Engineering at the University of Benin. When he's not on his laptop coding,
+        Electrical and Electronics Engineering at the University of Benin. When he's not building something,
         he's either studying, reading a novel or learning something new.
       </p>
     </section>
-    <section>
+    <section id="skillset-section">
       <h2>Skils</h2>
       <ul id="skillset">
         <li>HTML5</li>
@@ -36,11 +53,12 @@
         <li>JavaScript</li>
         <li>React.js</li>
         <li>Node.js</li>
+        <li>Express.js</li>
         <li>Python</li>
         <li>TailwindCSS</li>
       </ul>
     </section>
-    <section>
+    <section id="project-section">
       <h2>Projects</h2>
       <ul id="projects">
         <li class="proj">
@@ -75,17 +93,25 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="socials-section">
+      <h2>Socials</h2>
+      <ul id="socials">
+        <li><a href="https://x.com/dennis_builds" target="_blank" class="fa fa-twitter"></a></li>
+        <li><a href="https://wa.me/2348087041056" target="_blank" class="fa fa-whatsapp"></a></li>
+        <li><a href="https://www.linkedin.com/in/osemwonken-osemwegie-84ba5a299/" target="_blank" class="fa fa-linkedin"></a></li>
+      </ul>
+    </section>
+    <section id="contact-section">
       <h2>Contact Me</h2>
       <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="3977e5f1-6443-4950-a1ea-4cd450d51ad5">
         <div>
-          <label for="name">Full Name</label>
-          <input type="text" name="name" required placeholder="John Doe">
-          <label for="email">E-Mail</label>
+          <label for="name">Full Name:</label>
+          <input type="text" name="name" required placeholder="eg:John Doe">
+          <label for="email">E-Mail:</label>
           <input type="email" name="email" placeholder="john@doe.com" required>
         </div>
-        <label for="name">Message</label>
+        <label for="name">Message:</label>
         <textarea name="message" placeholder="Enter your message here..." required></textarea>
         <button type="submit">Submit</button>
       </form>

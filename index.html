@@ -19,14 +19,14 @@
   <header>
     <h1>Darius Dennis</h1>
     <p id="bio">Front End Dev / Aspiring Full Stack Dev / Electrical and Electronics Engineering Student</p>
-    <img src="assets/profile.jpg" alt="profile image" id="profile-image" loading="lazy"/>
+    <img src="assets/profile.jpg" alt="profile image" id="profile-image" loading="lazy" />
   </header>
-  <nav>
-    <ul class="nav-list">
+  <nav id="nav-list-contianer">
+    <ul class="nav-list" id="nav-list">
       <li><a href="#about-section">About</a></li>
       <li><a href="#skillset-section">Skillset</a></li>
       <li><a href="#project-section">Projects</a></li>
-      <li><a href="#socials-section">Socials</a></li>
+      <li><a href="#socials-section">Links</a></li>
       <li><a href="#contact-section">Contact</a></li>
     </ul>
   </nav>
@@ -71,7 +71,7 @@
           </div>
         </li>
         <li class="proj scroll-animated">
-          <h3>Text to Speech Converter</h3><img src="assets/tts.jpg" alt="" class="project-img"loading="lazy">
+          <h3>Text to Speech Converter</h3><img src="assets/tts.jpg" alt="" class="project-img" loading="lazy">
           <div><a href="#" target="_self" disabled>Live Demo</a>
             <details>
               <summary>Details</summary>A Text to Speech Converter Made using YarnGPT's text to speech API
@@ -98,7 +98,8 @@
       <ul id="socials">
         <li><a href="https://x.com/dennis_builds" target="_blank" class="fa fa-twitter"></a></li>
         <li><a href="https://wa.me/2348087041056" target="_blank" class="fa fa-whatsapp"></a></li>
-        <li><a href="https://www.linkedin.com/in/osemwonken-osemwegie-84ba5a299/" target="_blank" class="fa fa-linkedin"></a></li>
+        <li><a href="https://www.linkedin.com/in/osemwonken-osemwegie-84ba5a299/" target="_blank"
+            class="fa fa-linkedin"></a></li>
         <li><a href="https:/github.com/ddennis18/" target="_blank" class="fa fa-github"></a></li>
       </ul>
     </section>
@@ -106,12 +107,12 @@
       <h2>Contact Me</h2>
       <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="3977e5f1-6443-4950-a1ea-4cd450d51ad5">
-        <div>
-          <label for="name">Full Name:</label>
-          <input type="text" name="name" required placeholder="eg:John Doe">
-          <label for="email">E-Mail:</label>
-          <input type="email" name="email" placeholder="john@doe.com" required>
-        </div>
+
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" required placeholder="eg:John Doe">
+        <label for="email">E-Mail:</label>
+        <input type="email" name="email" placeholder="john@doe.com" required>
+
         <label for="name">Message:</label>
         <textarea name="message" placeholder="Enter your message here..." required></textarea>
         <button type="submit">Submit</button>
@@ -120,4 +121,5 @@
   </main>
 </body>
 <script src="script.js"></script>
+
 </html>
